@@ -1,0 +1,117 @@
+/* Basic Reset & Font */
+:root {
+  --primary-color: #61dafb;
+  --background-color: #282c34;
+  --card-background: #3a3f4b;
+  --text-color: #ffffff;
+  --text-secondary-color: #c7c7c7;
+  --border-color: #4a505c;
+  --btn-edit-bg: #4caf50;
+  --btn-edit-hover-bg: #45a049;
+  --btn-delete-bg: #f44336;
+  --btn-delete-hover-bg: #da190b;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Posts Section Styling */
+.posts {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.posts__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.posts__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.posts__item {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.posts__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.posts__item-title {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin: 0 0 0.75rem 0;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.posts__item-body {
+  font-size: 1rem;
+  color: var(--text-secondary-color);
+  line-height: 1.6;
+  flex-grow: 1; /* Makes the body take up available space */
+  margin: 0 0 1.5rem 0;
+}
+
+.posts__item-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto; /* Pushes actions to the bottom */
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+}
+
+.btn--edit {
+  background-color: var(--btn-edit-bg);
+}
+
+.btn--edit:hover {
+  background-color: var(--btn-edit-hover-bg);
+}
+
+.btn--delete {
+  background-color: var(--btn-delete-bg);
+}
+
+.btn--delete:hover {
+  background-color: var(--btn-delete-hover-bg);
+}
+

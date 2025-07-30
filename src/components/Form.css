@@ -1,0 +1,74 @@
+
+/* Form Styling */
+.form {
+  background-color: var(--card-background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0rem;
+  box-shadow: var(--box-shadow);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__heading {
+  margin-top: 0;
+  /* margin-bottom: 1.5rem; */
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--text-secondary-color);
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.2s ease;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.3);
+}
+
+.form__textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit; /* Ensures textarea uses the same font */
+}
+
+/* Posts Section Styling */
+.posts {
+.btn--delete:hover {
+  background-color: var(--btn-delete-hover-bg);
+}
+}
+
+.btn--primary {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-weight: bold;
+}
+
+.btn--primary:hover {
+  background-color: #4ab8d8;
+}
