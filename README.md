@@ -74,15 +74,6 @@ npm run build
 ```
 This will create a `dist` folder with the optimized files for deployment.
 
-## 📸 Screenshots
-
-*(It's a great idea to add screenshots of your application here to give a visual overview!)*
-
-**Example: Main Page**
-!Main Page Screenshot
-
-**Example: Add/Edit Modal**
-!Add/Edit Modal Screenshot
 
 
 ## 📄 License
