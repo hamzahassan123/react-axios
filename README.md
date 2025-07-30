@@ -8,7 +8,7 @@ A simple and intuitive CRUD (Create, Read, Update, Delete) application built wit
 
 You can view the live application deployed on Netlify.
 
-**[Live Demo Link](https://your-netlify-app-url.netlify.app/)** 👈 (Replace with your actual Netlify URL)
+**[Live Demo Link](https://react-axios-crud-1.netlify.app/)** 
 
 ## ✨ Features
 
